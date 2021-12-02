@@ -5,6 +5,7 @@ import kotlin.time.measureTime
 fun main() {
     val time = measureTime {
         runDay1()
+        runDay2()
     }
     println("--------------\nExecution took $time")
 }

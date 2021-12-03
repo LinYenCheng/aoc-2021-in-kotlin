@@ -40,8 +40,8 @@ fun runDay1() {
     println("--- DAY 01 ---")
 
     // test if implementation meets criteria from the description, like:
-    val numbersTest = File("src/Day01_test.txt").readLines().map { it.toInt() }
-    val numbers = File("src/Day01.txt").readLines().map { it.toInt() }
+    val numbersTest = readInput("Day01_test").map { it.toInt() }
+    val numbers = readInput("Day01_test").map { it.toInt() }
     check(getIncreaseMeasurements(numbersTest) == 7)
     check(getIncreaseMeasurementsWithSlidingWindow(numbersTest) == 5)
 

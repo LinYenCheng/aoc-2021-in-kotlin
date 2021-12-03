@@ -44,8 +44,8 @@ fun getDepthXHorizontalTwo(steps: List<List<String>>): Int {
 fun runDay2() {
     println("--- DAY 02 ---")
 
-    val stepsTest = File("src/Day02_test.txt").readLines().map { it.toString().split(' ') }
-    val steps = File("src/Day02.txt").readLines().map { it.toString().split(' ') }
+    val stepsTest = readInput("Day02_test").map { it.toString().split(' ') }
+    val steps = readInput("Day02_test").map { it.toString().split(' ') }
     check(getDepthXHorizontal(stepsTest) == 150)
     check(getDepthXHorizontalTwo(stepsTest) == 900)
 

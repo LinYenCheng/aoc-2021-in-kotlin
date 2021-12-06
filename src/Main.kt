@@ -8,6 +8,7 @@ fun main() {
         runDay2()
         runDay3()
         runDay4()
+        runDay5()
     }
     println("--------------\nExecution took $time")
 }
